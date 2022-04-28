@@ -1,0 +1,31 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~bootstrap-icons/font/bootstrap-icons.scss";
+
+.bi-cart-plus,
+.bi-cart-dash,
+.bi-cart-x {
+  cursor: pointer;
+  font-size: 1.5em;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.bi-cart-plus {
+  color: teal;
+}
+
+.bi-cart-dash {
+  color: orange;
+}
+
+.bi-cart-x {
+  color: tomato;
+}
+
+.bi-cart-plus:hover,
+.bi-cart-dash:hover,
+.bi-cart-x:hover {
+  transition: 0.2s ease-in-out;
+  transform: scale(1.5);
+  transform-origin: center;
+}

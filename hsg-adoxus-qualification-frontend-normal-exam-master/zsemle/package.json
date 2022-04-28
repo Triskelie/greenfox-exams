@@ -1,0 +1,82 @@
+{
+  "name": "zsemle",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@alex_neo/jest-expect-message": "^1.0.5",
+    "@babel/core": "^7.17.0",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@testing-library/dom": "^8.11.3",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "babel-jest": "^27.4.6",
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.8.0",
+    "eslint": "^8.8.0",
+    "esm": "^3.2.25",
+    "fakerator": "^0.3.5",
+    "firebase": "^9.6.5",
+    "firebase-admin": "^10.0.2",
+    "firestore-jest-mock": "^0.17.0",
+    "jasmine": "^4.0.2",
+    "jasmine-parameterized": "^0.4.0",
+    "jest-expect-message": "^1.0.2",
+    "jsdom": "^19.0.0",
+    "lodash": "^4.17.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "5.0.0",
+    "sass": "^1.49.7",
+    "testing-library-table-queries": "^0.2.0",
+    "validator": "^13.7.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest",
+    "eject": "react-scripts eject",
+    "loadData": "node -r esm src/loadData.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(scss|css)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "setupFilesAfterEnv": [
+      "@alex_neo/jest-expect-message"
+    ],
+    "reporters": [
+      "default"
+    ],
+    "testEnvironment": "node",
+    "modulePathIgnorePatterns": [
+      "test-helper.js"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "postcss-normalize": "^10.0.1"
+  }
+}
